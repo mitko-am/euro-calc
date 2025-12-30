@@ -1,4 +1,4 @@
-const CACHE_NAME = 'v1_euro_calc';
+const CACHE_NAME = 'v2_euro_calc';
 const assets = ['./', './index.html', './styles.css', './script.js', './manifest.json'];
 
 self.addEventListener('install', e => {
