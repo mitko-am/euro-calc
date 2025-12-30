@@ -1,0 +1,15 @@
+{
+  "name": "Euro Change Bulgaria",
+  "short_name": "EuroResto",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#009688",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/190/190543.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
