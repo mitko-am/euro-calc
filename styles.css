@@ -1,0 +1,145 @@
+:root {
+    --primary-gradient: linear-gradient(135deg, #009688 0%, #004a99 100%);
+    --bg-color: #f0f2f5;
+    --card-bg: #ffffff;
+    --text-color: #333;
+    --border-radius: 24px;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app-container {
+    width: 90%;
+    max-width: 400px;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.icon-btn {
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+
+.calculator-card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 30px 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.euro-logo {
+    width: 70px;
+    height: 70px;
+    background: var(--primary-gradient);
+    border-radius: 20px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.25rem;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+.tabs {
+    display: flex;
+    background: #f0f0f0;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    padding: 4px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.tab.active {
+    background: #00796b;
+    color: white;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #00796b;
+}
+
+.result-button {
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
+    background: var(--primary-gradient);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 8px 20px rgba(0, 74, 153, 0.2);
+}
+
+.footer-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.control-btn {
+    background: #f8f8f8;
+    border: 1px solid #eee;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
