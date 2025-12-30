@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Евро Ресто Калкулатор</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#009688">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="header-menu">
+            <button class="icon-btn">👤</button>
+            <button class="icon-btn">⚙️</button>
+        </header>
+
+        <main class="calculator-card">
+            <div class="logo-container">
+                <div class="euro-logo">€</div>
+            </div>
+            
+            <h1>Калкулатор на ресто в евро</h1>
+
+            <div class="tabs">
+                <button class="tab active">Калкулатор</button>
+                <button class="tab">Инфо</button>
+            </div>
+
+            <div class="input-group">
+                <label for="priceEur">Общо за плащане (€):</label>
+                <input type="number" id="priceEur" placeholder="Напиши цената в EUR" step="0.01">
+            </div>
+
+            <div class="input-group">
+                <label for="paidBgn">Плащам лева (лв):</label>
+                <input type="number" id="paidBgn" placeholder="Колко BGN даваш" step="0.01">
+            </div>
+
+            <div class="input-group">
+                <label for="paidEur">Плащам в евро (€):</label>
+                <input type="number" id="paidEur" placeholder="Колко EUR даваш" step="0.01">
+            </div>
+
+            <div id="resultDisplay" class="result-button">
+                Тук ще се показва твоето ресто
+            </div>
+
+            <div class="footer-controls">
+                <button class="control-btn" title="Dark Mode">🌙/☀️</button>
+                <button class="control-btn" id="clearBtn">Изчисти</button>
+                <select class="control-btn">
+                    <option>Български</option>
+                    <option>English</option>
+                </select>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>
